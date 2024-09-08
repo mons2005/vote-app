@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General styling */
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffebf2; /* Light pink background for the whole app */
+  min-height: 100vh; /* Ensure the background covers the entire viewport height */
+}
+
+/* Voting section */
+.voting-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #ffffff; /* White background for the voting section to stand out */
+  padding: 20px; /* Add some padding inside the voting section */
+  border-radius: 10px; /* Rounded corners for the voting section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Character styling */
+.character {
+  border: 2px solid #f7a2a2; /* Light pink border for characters */
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff2f2; /* Very light pink background for each character */
+}
+
+.character-img {
+  width: 150px; /* Ensure consistent size for images */
+  height: 150px;
+  object-fit: contain; /* Ensure full visibility of the image */
+  border-radius: 8px;
+}
+
+.vote-buttons {
+  margin-top: 10px;
+}
+
+.vote-buttons button {
+  background-color: #ff69b4; /* Hot pink background color */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.vote-buttons button:hover {
+  background-color: #ff1493; /* Deep pink for hover effect */
+}
+
+
+/* Results container */
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px; /* Thinner results container */
+  margin: 20px auto; /* Center results container horizontally */
+  background-color: #ffffff; /* White background for the results container */
+  padding: 20px; /* Add padding inside the results container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.results-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #f7a2a2; /* Light pink border */
+  border-radius: 8px;
+  background-color: #fff2f2; /* Very light pink background for the results box */
+}
+
+.result-item {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Space items evenly */
+  width: 100%; /* Full width of the container */
+  margin: 10px 0; /* Space between result items */
+  padding: 10px;
+  border: 1px solid #f7a2a2; /* Light pink border */
+  border-radius: 8px;
+  background-color: #fff; /* White background for each result item */
+}
+
+.result-img {
+  width: 100px; /* Fixed width for result images */
+  height: 100px; /* Fixed height for result images */
+  object-fit: contain; /* Ensure full visibility of the image */
+  border-radius: 8px;
+  margin-right: 10px; /* Space between image and text */
+}
+
+.result-item h3, .result-item p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Winners container */
+.winners-container {
+  display: flex;
+  justify-content: center; /* Center the winners horizontally */
+  gap: 20px; /* Space between each winner */
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the winners container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.winner-item {
+  text-align: center;
+  background-color: #fff2f2; /* Light pink background for each winner */
+  padding: 10px;
+  border-radius: 8px;
+  width: 150px; /* Set a fixed width for each winner item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for each winner */
+}
+
+.winner-img {
+  width: 150px; /* Fixed width for all winner images */
+  height: 150px; /* Fixed height for all winner images */
+  object-fit: contain; /* Ensure full visibility of the image */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
